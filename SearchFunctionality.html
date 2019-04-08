@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+
+	<div id="dialog" title="Dialog Title" style="display: none;">
+		<p>
+			oke dan
+		</p>
+	</div>
+	<!-- create a 2nd invisible div to call when activating the "search" function -->
+	<div id="zoeken" title="Dialog Title" style="display: none;">
+	<input id="item" type="text">
+	</div>
+ 
+</body>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+
+
+	$(document).ready(function(){
+
+			//create dialog box
+		$('#dialog').dialog({
+			autoOpen: true,
+			width: 500,
+			height: 500,
+			//create buttons
+			buttons: [
+			{
+				text: "Search",
+				click: function(){
+					
+					$('#zoeken').dialog({
+						autoOpen: true,
+						buttons: [{
+							text: "Submit",
+							click: function(){
+								var item = "https://www.google.com/search?q=" + $('#item').val();
+								window.open(item, "test", "width=1000,height=1000");
+							}
+						}]
+					});
+				}
+			},
+
+			{
+				text: "Close"
+			}]
+		});
+
+		$("#dialog").dialog("open");
+	})
+		
+
+</script>
+</html>
