@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" >
+	<title>animate practice</title>
+</head>
+<body>
+
+	<div>
+		<input type="button" id="btn1" value="left">
+		<input type="button" id="btn2" value="right">
+		<input type="button" id="btn3" value="down">
+		<input type="button" id="btn4" value="up">
+	</div>
+
+	<div id="container">
+		<div id="slider">
+			<img id="PIC1" src="pictures/card1.png">
+text text text
+	</div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js">
+	</script>
+	<script>
+		
+		$(function() {
+
+			$('#btn1').on('click' ,function(){
+
+				$('#slider').animate({'margin-left' : '-=100px'}) ;
+			})
+		});
+
+	$(function() {
+
+			$('#btn2').on('click' ,function(){
+
+				$('#slider').animate({'margin-left' : '+=100px'}) ;
+			})
+		});
+
+		$(function() {
+
+			$('#btn3').on('click' ,function(){
+
+				$('#slider').animate({'margin-top' : '+=100px'}) ;
+			})
+		});
+			$(function() {
+
+			$('#btn4').on('click' ,function(){
+
+				$('#slider').animate({'margin-top' : '-=100px'}) ;
+			})
+		});
+	</script>
+</body>
+</html>
