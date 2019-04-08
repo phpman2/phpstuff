@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery UI simple dialog</title>
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+	<h2 id="heading" class="demoHeaders">Dialog</h2>
+	<p>
+		<button id="dialog-link" class="ui-button ui-corner-all ui-widget">
+			<span class="ui-icon ui-icon-newwin"></span>open dialog
+		</button>
+	</p>
+
+	<div id="dialog" title="Dialog Title" style="display:none;">
+
+	<p>ik haat wielrenner zo erg
+ik was eerst wel een beetje zo van, wauw we haten wel lekker allemaal sportfietsers beetje net als de NS haten terwijl ze ook best veel goed doen
+maar inmiddels ben ik ook wel op team "maak wielrenners kankerdood'
+ik had laatst ook dat ik gewoon naar m'n werk aan t fietsen was en er komt zo'n fietsjunk langs met vol gas, TEGEN HET GVD VERKEER IN, en dan het kanker LEF hebben om tegen mij te zeggen "PAS OP MAN"
+de intense neiging om me abrupt om te draaien, vol gas erachter aan te gaan en de kanker mongol voor een vrachtwagen te trappen alleen al om zijn KKR schedel te zien worden verpulverd door 500 kilo aan verhuiswagen inboedel zou mij echt enorm happy maken</p>
+
+  </div>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	
+	//DEFINE DIALOG BOX
+	$('#dialog').show().dialog({
+		autoOpen: false , 
+		width: 400 , 
+		height: 400 ,
+		buttons: [{
+
+			text: "OK",
+			click: function(){
+				$('heading').html("thanks for using this UI");
+				$(this).dialog('close');
+			}
+
+		},
+
+		{
+			text: "show me something gorgeous",
+			click: function() {
+				window.open("https://www.instagram.com/chokeslamgod/" , "mywindow" , "width=800,height=800") ;
+			}
+		}
+
+		]
+
+	})
+
+	//use the button called 'dialog-link' to open the dialog box
+
+	$('#dialog-link').click(function(event) {
+		$('#dialog').dialog('open') ;
+	})
+
+</script>
