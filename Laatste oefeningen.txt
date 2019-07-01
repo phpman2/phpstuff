@@ -1,0 +1,9 @@
+Voorbereiding Examen:
+
+Maak een evaluatie van:
+	- Het product (gebruik hiervoor de Acceptatietest)
+	- Het process (hoe ging de implementatie)
+
+GEBRUIK HET TEMPLATE OP NETWORK SHARE
+	
+Maak een eigen MessageBox dialoog waarmee verschillende meldingen gedaan kunnen worden. (dus de melding niet hardcoded)

@@ -1,0 +1,33 @@
+DAG 1:  3 opdrachten (+-8 uur)
+DAG 2:  1 opdracht (+- 1 uur)
+
+
+- Je krijgt de applicatie C#
+- MAAK EEN COPY VAN DEZE APPLICATIE!!!
+- Je krijgt documentatie
+
+- Opdracht 1 Opstellen acceptatie tests
+	- Sjabloon
+	- Scenario's op basis van applicatie onderdeel bedenken
+	- Verzin minimaal 6 a 7 scenarios;
+- Opdracht 2 Voer de acceptatie tests uit
+	- Bij ongeplande uitkomsten -> registreren -> screenshots
+	- Bespreek de bevindingen met Dean/Denny
+	- Samen met Dean/Denny afspreken wat je gaat fixen
+	- Laat je zien dat problemen opgelost zijn
+- Opdracht 3 Implementeer applicatie
+	- Versie applicatie ophogen 1.0 -> 1.1.0.1 -> 2.0
+	- Configuratie app.config
+	- \\SERVER
+	- Versiebeheer document template invullen
+	- Dean/Denny komen checken
+- Opdracht 4 Evalueer product en proces
+	- Op basis van een template
+	
+	
+	
+	
+	
+	
+
+	
